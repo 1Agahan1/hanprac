@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f9f9f9, #e3f2fd);
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #2196f3;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+.toggle-theme {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2196f3;
+}
+
+.projects ul, .music {
+  list-style: none;
+  padding: 0;
+}
+
+.projects ul li {
+  margin: 20px 0;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.projects ul li:hover {
+  transform: scale(1.03);
+}
+
+.projects ul li h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.projects ul li p {
+  margin: 0;
+  color: #555;
+}
+
+.music {
+  margin-top: 40px;
+  padding: 20px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.music p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.music a {
+  text-decoration: none;
+  color: #2196f3;
+  font-weight: 600;
+}
+
+.music a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2196f3;
+  color: white;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}

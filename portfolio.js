@@ -13,3 +13,22 @@ function toggleTheme() {
     moonIcon.style.display = 'none';
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("nav ul li a");
+        navLinks.forEach(link => {
+          if (link.href === window.location.href) {
+            link.classList.add("active");
+          }
+        });
+        navLinks.forEach(link => {
+          link.addEventListener("click", event => {
+            event.preventDefault();
+            const targetId = link.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      });

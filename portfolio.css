@@ -95,3 +95,7 @@ footer p {
   margin: 0;
   font-size: 0.9rem;
 }
+.active {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
